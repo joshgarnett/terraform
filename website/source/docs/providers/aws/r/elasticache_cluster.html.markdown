@@ -60,6 +60,10 @@ names to associate with this cache cluster
 * `security_group_ids` – (Optional, VPC only) One or more VPC security groups associated
  with the cache cluster
 
+* `apply_immediately` - (Optional) Specifies whether any database modifications
+     are applied immediately, or during the next maintenance window. Default is
+     `false`. See [Amazon ElastiCache Documentation for more information.][1]
+
 * `tags` - (Optional) A mapping of tags to assign to the resource.
 
 
@@ -77,3 +81,6 @@ The following attributes are exported:
 * `subnet_group_name`
 * `security_group_names`
 * `security_group_ids`
+
+
+[1]: http://docs.aws.amazon.com/AmazonElastiCache/latest/APIReference/API_ModifyCacheCluster.html
